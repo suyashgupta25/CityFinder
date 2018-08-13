@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="m_4dp">4dp</dimen><!-- small margin -->
+    <dimen name="m_8dp">8dp</dimen><!-- medium margin -->
+    <dimen name="m_12dp">12dp</dimen><!-- large margin -->
+    <dimen name="m_16dp">16dp</dimen><!-- x-large margin -->
+
+    <dimen name="city_name">18sp</dimen>
+</resources>

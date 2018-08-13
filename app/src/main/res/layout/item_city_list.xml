@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="city"
+            type="com.backbase.cityfinder.data.model.local.City" />
+
+        <variable
+            name="viewModel"
+            type="com.backbase.cityfinder.ui.cities.citieslist.CitiesListItemViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="@{() -> viewModel.onCityClicked(city)}"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/m_16dp"
+        android:paddingLeft="@dimen/m_16dp"
+        android:paddingRight="@dimen/m_16dp"
+        android:paddingTop="@dimen/m_16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:lines="1"
+            android:text="@{viewModel.cityTitle}"
+            android:textColor="@color/city_name"
+            android:textSize="@dimen/city_name" />
+
+    </RelativeLayout>
+
+</layout>

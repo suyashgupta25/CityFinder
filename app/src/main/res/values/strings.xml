@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">City Finder</string>
+    <string name="toolbar_heading_map">Location</string>
+
+    <string name="action_search">Search</string>
+
+    <string name="param_city_details">paramCityDetails</string>
+</resources>
